@@ -13,6 +13,7 @@ public class Tester {
 		
 		ArrayList<Point> pathA = QuestionA.getPath(maze);
 		ArrayList<Point> pathB = QuestionB.getPath(maze);
+		ArrayList<Point> pathC = Answer.getPath(maze);
 		if (pathA != null) {
 			System.out.println(pathA.toString());
 		} else {
@@ -23,6 +24,12 @@ public class Tester {
 			System.out.println(pathB.toString());
 		} else {
 			System.out.println("No path found.");
-		}		
+		}
+
+		if (pathC != null) {
+			System.out.println(pathC.toString());
+		} else {
+			System.out.println("No path found.");
+		}
 	}
 }
