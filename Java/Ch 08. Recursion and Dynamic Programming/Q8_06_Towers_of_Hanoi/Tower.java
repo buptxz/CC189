@@ -17,9 +17,9 @@ public class Tower {
 	public void add(int d) {
 		if (!disks.isEmpty() && disks.peek() <= d) {
 			System.out.println("Error placing disk " + d);
-		} else {
-			disks.push(d);
 		}
+		disks.push(d);
+
 	}
 	
 	public void moveTopTo(Tower t) {
@@ -58,5 +58,22 @@ public class Tower {
 			buffer.moveDisks(n - 1, destination, this);
 			System.out.println("</" + tag + ">");
 		}
+	}
+
+	public static void main(String[] args) {
+		// Set up code.
+		int n = 5;
+		Tower[] towers = new Tower[3];
+		for (int i = 0; i < 3; i++) {
+			towers[i] = new Tower(i);
+		}
+		for (int i = n - 1; i >= 0; i--) {
+			towers[0].add(i);
+		}
+
+		// Copy and paste output into a .XML file and open it with internet explorer.
+		//towers[0].print();
+		towers[0].moveDisks(n, towers[2], towers[1]);
+		//towers[2].print();
 	}
 }
