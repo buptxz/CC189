@@ -40,7 +40,7 @@ public class QuestionA {
 	}
 	
 	public static void main(String[] args) {
-		String expression = "0^0|1&1^1|0|1";
+		String expression = "0^0^0&1|1";
 		boolean result = true;
 		
 		System.out.println(countEval(expression, result));

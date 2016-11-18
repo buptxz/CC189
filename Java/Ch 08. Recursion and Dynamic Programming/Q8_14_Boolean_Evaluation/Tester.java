@@ -53,6 +53,7 @@ public class Tester {
 			
 			int a = QuestionA.countEval(terms, result);
 			int b = QuestionB.countEval(terms, result);
+			int c = Answer.countEval(terms, result);
 			
 			HashMap<String, Integer> results = new HashMap<String, Integer>();
 			results.put("oBF", oBF);
@@ -61,6 +62,7 @@ public class Tester {
 			results.put("oDPEFF", oDPEFF);
 			results.put("a", a);
 			results.put("b", b);
+			results.put("c", c);
 			
 			if (allEqual(results)) {
 				System.out.println("Success: " + terms + "->" + b);
