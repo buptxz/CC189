@@ -8,7 +8,7 @@ public class Question {
 	public static void main(String[] args) {
 		String[] array = {"apple", "banana", "carrot", "ele", "duck", "papel", "tarroc", "cudk", "eel", "lee"};
 		System.out.println(AssortedMethods.stringArrayToString(array));
-		Arrays.sort(array, new AnagramComparator());
+		Arrays.sort(array, new MyAnagramComparator());
 		System.out.println(AssortedMethods.stringArrayToString(array));
 	}
 }
