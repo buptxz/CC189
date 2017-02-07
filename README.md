@@ -1,2 +1,2 @@
-# CrackTheCodeInterview
-This is my answer of CC150.
+# Cracking the Code Interview
+This is my answer of CC189.
